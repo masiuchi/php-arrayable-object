@@ -1,34 +1,34 @@
 <?php
 /**
- * Test file for ArrayObject
+ * Test file for ArrayableObject
  *
  * PHP VERSION >= 7
  * 
- * @category ArrayObject
- * @package  ArrayObject
+ * @category ArrayableObject
+ * @package  ArrayableObject
  * @author   Masahiro IUCHI <masahiro.iuchi@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
  * @version  GIT: <git_id>
- * @link     https://github.com/masiuchi/php-array-object
+ * @link     https://github.com/masiuchi/php-arrayable-object
  */
-namespace ArrayObject\Test;
+namespace ArrayableObject\Test;
 
 use PHPUnit\Framework\TestCase;
 
-use ArrayObject\ArrayObject;
+use ArrayableObject\ArrayableObject;
 use stdClass;
 
 /**
- * Test class for ArrayObject
+ * Test class for ArrayableObject
  * 
  * @category Test
  * @package  ArrayObject\Test
  * @author   Masahiro IUCHI <masahiro.iuchi@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/masiuchi/php-array-object
+ * @link     https://github.com/masiuchi/php-arrayable-object
  */
 
-class ArrayObjectTest extends TestCase
+class ArrayableObjectTest extends TestCase
 {
     /**
      * Test constructor
@@ -38,8 +38,8 @@ class ArrayObjectTest extends TestCase
      */
     public function testConstructor()
     {
-        $obj = new ArrayObject;
-        $this->assertInstanceOf('ArrayObject\ArrayObject', $obj);
+        $obj = new ArrayableObject;
+        $this->assertInstanceOf('ArrayableObject\ArrayableObject', $obj);
     }
 
     /**
@@ -50,7 +50,7 @@ class ArrayObjectTest extends TestCase
      */
     public function testObjectBehavior()
     {
-        $obj = new ArrayObject;
+        $obj = new ArrayableObject;
         $obj->a = 1;
         $obj->{'b'} = 2;
         
@@ -73,7 +73,7 @@ class ArrayObjectTest extends TestCase
      */
     public function testArrayBehavior()
     {
-        $obj = new ArrayObject;
+        $obj = new ArrayableObject;
         $obj[] = 1;
         $obj[] = 2;
 
@@ -90,7 +90,7 @@ class ArrayObjectTest extends TestCase
      */
     public function testAssociativeArrayBehavior()
     {
-        $obj = new ArrayObject;
+        $obj = new ArrayableObject;
         $obj['a'] = 1;
         $obj['b'] = 2;
 
@@ -113,7 +113,7 @@ class ArrayObjectTest extends TestCase
      */
     public function testForeachFunction()
     {
-        $obj = new ArrayObject;
+        $obj = new ArrayableObject;
         $obj->{'a'} = 1;
         $obj->{'b'} = 2;
 
@@ -134,7 +134,7 @@ class ArrayObjectTest extends TestCase
      */
     public function testDiffernceInterface()
     {
-        $obj = new ArrayObject;
+        $obj = new ArrayableObject;
 
         $obj['a'] = 1;
         $this->assertEquals(1, $obj->{'a'});

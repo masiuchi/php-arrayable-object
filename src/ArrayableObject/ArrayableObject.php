@@ -4,14 +4,14 @@
  *
  * PHP VERSION >= 7
  * 
- * @category ArrayObject
- * @package  ArrayObject
+ * @category ArrayableObject
+ * @package  ArrayableObject
  * @author   Masahiro IUCHI <masahiro.iuchi@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
  * @version  GIT: <git_id>
- * @link     https://github.com/masiuchi/php-array-object
+ * @link     https://github.com/masiuchi/php-arrayable-object
  */
-namespace ArrayObject;
+namespace ArrayableObject;
 
 use ArrayAccess;
 use Countable;
@@ -19,13 +19,13 @@ use Countable;
 /**
  * A PHP class implementing ArrayAccess interface
  * 
- * @category ArrayObject
- * @package  ArrayObject
+ * @category ArrayableObject
+ * @package  ArrayableObject
  * @author   Masahiro IUCHI <masahiro.iuchi@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/masiuchi/php-array-object
+ * @link     https://github.com/masiuchi/php-arrayable-object
  */
-class ArrayObject implements ArrayAccess, Countable
+class ArrayableObject implements ArrayAccess, Countable
 {
     const VERSION = '0.1.0';
 

@@ -1,8 +1,8 @@
 {
-    "name": "masiuchi/array-object",
+    "name": "masiuchi/php-arrayable-object",
     "type": "library",
     "description": "A PHP class implementing ArrayAccess interface",
-    "homepage": "https://github.com/masiuchi/php-array-object",
+    "homepage": "https://github.com/masiuchi/php-arrayable-object",
     "license": "MIT",
     "authors": [
         {
@@ -17,12 +17,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ArrayObject\\": "src/ArrayObject"
+            "ArrayableObject\\": "src/ArrayableObject"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ArrayObject\\Test\\": "tests/ArrayObject/Test"
+            "ArrayableObject\\Test\\": "tests/ArrayableObject/Test"
         }
     },
     "scripts": {
