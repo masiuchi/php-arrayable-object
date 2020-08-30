@@ -127,12 +127,12 @@ class ArrayableObjectTest extends TestCase
     }
 
     /**
-     * Test to use difference interface
+     * Test to use different interface
      * 
      * @test
      * @return void
      */
-    public function testDiffernceInterface()
+    public function testDifferentInterface()
     {
         $obj = new ArrayableObject;
 
